@@ -16,7 +16,7 @@ const port = 25575
 var options = {
     challenge: false
 };
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 const ejecutar = async (comand)=>{
     try {
