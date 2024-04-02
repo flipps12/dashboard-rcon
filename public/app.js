@@ -8,7 +8,13 @@ const memoriaTotaldiv = document.getElementById('memoriaTotaldiv');
 const tpsdiv = document.getElementById('tpsdiv');
 const reload = document.getElementById('reload');
 const off = document.getElementById('off');
-const contra = prompt('contraseña:');
+const contra = document.cookie.split('=')[1];
+
+if (contra == undefined){
+    const newContra = prompt('Contraseña')
+    document.cookie = `contra=${newContra}`
+    location.reload()
+}
 
 reload.addEventListener('click', () => {
     listPlayer.innerHTML = ''

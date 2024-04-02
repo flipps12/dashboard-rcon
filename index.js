@@ -26,6 +26,7 @@ const ejecutar = async (comand)=>{
             password: password
         });
         const result = await client.send(comand)
+        client.end()
         return result
     } catch (error) {
         console.error(error)
