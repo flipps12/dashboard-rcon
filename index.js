@@ -37,6 +37,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/ejecutar', async (req, res)=>{
+    console.log(req.body)
     if (req.body.password != password) res.json({ status: 'error auth'})
     else {
         res.json({ status: true, data: await ejecutar(req.body.comando)})
