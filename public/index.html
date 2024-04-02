@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Dashboard</h1>
+        <div id="sep"></div>
+        <i class="fa-solid fa-rotate-right" id="reload"></i>
+        <i class="fa-solid fa-power-off" id="off"></i>
+    </nav>
+    <div id="flexbox">
+        <div id="primeracolumna">
+            <div id="consola">
+                <div id="consolaDisplay"></div>
+                <div id="consolaInput"><input id="input" placeholder="Consola:" type="text"><input onclick="ejecutar()"
+                        id="button" value="Enviar" type="button"></div>
+            </div>
+            
+            <div id="tps">
+                <div id="tpsson">
+                    <div id="memoriaUsadadiv"></div>
+                    <div id="memoriaLibrediv"></div>
+                    <div id="memoriaTotaldiv"></div>
+                    <div id="tpsdiv"></div>
+                </div>
+                <div id="canvasContainer">
+                    <canvas id="myPieGraph" height="120" width="240"></canvas>
+                </div>
+            </div>
+        </div>
+        <div id="lista">
+            <ul id="listPlayers"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/3af50be71a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

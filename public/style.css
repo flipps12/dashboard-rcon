@@ -1,0 +1,172 @@
+:root {
+    --text: #dedaf7;
+    --background: #090720;
+    --primary: #9488e5;
+    --secondary: #8c1f45;
+    --accent: #d35b34;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 8vh;
+    margin-bottom: 1vh;
+    border-bottom: .1px solid var(--accent);
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    font-size: 30px;
+    margin-left: 10px;
+    display: inline;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .3s ease;
+}
+
+h1:hover {
+    background: linear-gradient(170deg, var(--primary) 10%, var(--accent) 60%);
+    background-clip: text;
+    margin-left: 15px;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#sep {
+    flex: 1;
+}
+
+#reload {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 25px;
+    color: var(--accent);
+    transition: all .5s ease-out;
+}
+
+#reload:hover {
+    color: var(--primary);
+    rotate: 360deg;
+}
+
+#off {
+    color: #626262;
+    font-size: 25px;
+    margin-right: 10px;
+    transition: all .5s ease-out;
+}
+
+#off:hover {
+    color: #8c1f1f;
+    rotate: 360deg;
+}
+
+#flexbox {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    height: 87vh;
+}
+
+#lista,
+#tps,
+#consola {
+    border-radius: 15px;
+    background-color: hsl(248, 64%, 72%, 5%);
+    font-family: monospace;
+}
+
+#primeracolumna {
+    flex: 6;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#lista {
+    flex: 3;
+    overflow-y: auto;
+    font-size: 20px;
+}
+
+#tps {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#tpsson {
+    margin-left: 10px;
+    flex: 1;
+    font-size: 18px;
+    gap: 5px;
+}
+
+#memoriaUsadadiv {
+    color: #626262;
+}
+
+#memoriaLibrediv {
+    color: rgb(53, 201, 53);
+}
+
+#consola {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    max-height: 68%;
+}
+
+#canvasContainer {
+    height: 90%;
+}
+
+#consolaDisplay {
+    height: 93%;
+    margin: 10px;
+    overflow-y: auto;
+}
+
+#consolaInput {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px;
+    height: 10%;
+}
+
+#input {
+    flex: 7;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    border-bottom: 2px solid var(--accent);
+    color: #fff;
+}
+
+#button {
+    flex: 2;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: linear-gradient(150deg, var(--primary), var(--accent));
+    color: var(--background);
+}
+
+#grafica {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+}
