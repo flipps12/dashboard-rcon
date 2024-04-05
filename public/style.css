@@ -130,7 +130,13 @@ h1:hover {
 #canvasContainer {
     height: 90%;
 }
-
+#contadorPlayers {
+    width: 100%;
+    display: flex;
+    margin-block: 5px;
+    justify-content: center;
+    color: var(--secondary);
+}
 #consolaDisplay {
     height: 93%;
     margin: 10px;
@@ -169,4 +175,60 @@ h1:hover {
     height: 100px;
     border-radius: 50%;
     background-color: #fff;
+}
+
+@media (max-width: 700px) {
+    nav {
+        height: 10vh;
+    }
+    h1 {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    #reload,
+    #off {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+    #flexbox {
+        flex-direction: column;
+        height: 180vh;
+        gap: 20px;
+        margin: 20px;
+    }
+    #primeracolumna {
+        flex-direction: column-reverse;
+        flex: auto;
+        height: 87vh;
+        gap: 20px;
+    }
+    #contadorPlayers {
+        font-size: 30px;
+    }
+    #tps {
+        flex: 2;
+    }
+    #tpsson {
+        font-size: 21px;
+    }
+    #canvasContainer {
+        height: 60%;
+        width: 40%;
+        display: flex;
+    }
+    #consola {
+        max-height: 77%;
+        font-size: 20px;
+    }
+    #input {
+        font-size: 25px;
+    }
+    input {
+        font-size: 20px;
+    }
+    #lista {
+        height: 90vh;
+        flex: auto;
+        font-size: 20px;
+    }
 }

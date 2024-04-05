@@ -8,6 +8,7 @@ const memoriaTotaldiv = document.getElementById('memoriaTotaldiv');
 const tpsdiv = document.getElementById('tpsdiv');
 const reload = document.getElementById('reload');
 const off = document.getElementById('off');
+const contadorPlayers = document.getElementById('contadorPlayers');
 const contra = document.cookie.split('=')[1];
 
 if (contra == undefined){
@@ -93,6 +94,7 @@ const main = async () => {
             listPlayer.appendChild(li);
         }
         for (const player in listPlayers) {
+            contadorPlayers.textContent = `Players: ${listPlayers.length}`;
             console.log(listPlayers[player]);
             const li = document.createElement('li');
             li.textContent = listPlayers[player].slice(1);
